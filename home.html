@@ -27,16 +27,33 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(atual)</span></a>
+              <a class="nav-link" data-scroll href="#">Home <span class="sr-only">(atual)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" data-scroll href="#colecoes">Coleções</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
+              <a class="nav-link" data-scroll href="#promocao">Promoção</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#flores">Flores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="#frida">Frida</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contatos</a>
             </li>
           </ul>
 <!--           <form class="form-inline mt-2 mt-md-0">
+
+                    <ul>
+                        <li><a data-scroll href="#overview">A propriedade</a></li>
+                        <li><a data-scroll href="#sponsors">Serviços</a></li>
+                        <li><a data-scroll href="#register">Contato</a></li>
+                        <li><a data-scroll href="#venue">Local</a></li>
+                    </ul>
+
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
           </form> -->
@@ -58,7 +75,7 @@
               <div class="carousel-caption text-left">
                 <h1>Dia das Mães</h1>
                 <p>Uma descrição ...</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                <p><a class="btn btn-lg btn-primary" data-scroll href="#promocao" role="button">Saiba mais</a></p>
               </div>
             </div>
           </div>
@@ -68,7 +85,7 @@
               <div class="carousel-caption">
                 <h1>Alça Lateral</h1>
                 <p>Breve descrição, detalhes</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                <p><a class="btn btn-lg btn-primary" data-scroll href="#flores" role="button">Saiba mais</a></p>
               </div>
             </div>
           </div>
@@ -78,7 +95,7 @@
               <div class="carousel-caption text-right">
                 <h1>Coleção Flores</h1>
                 <p>Detalhes e descrições</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Saiba mais</a></p>
+                <p><a class="btn btn-lg btn-primary" data-scroll href="#flores" role="button">Saiba mais</a></p>
               </div>
             </div>
           </div>
@@ -97,36 +114,35 @@
       <!-- Mensagens de marketing e outras featurezinhas
       ================================================== -->
       <!-- Envolve o resto da página em outro container, para centralizar todo o conteúdo. -->
-
-      <div class="container marketing">
-
-        <!-- Três colunas de texto, abaixo do carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="image/love_mon.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Dia das Mães</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="image/mp.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>Marita Padin</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="image/colecao_flores.jpg" alt="Generic placeholder image" width="140" height="140">
-            <h2>Coleções</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+    <hr class="featurette-divider" id="colecoes">
+    <div class="container marketing">
+      <!-- Três colunas de texto, abaixo do carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="image/love_mon.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Dia das Mães</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="image/mp.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Marita Padin</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="rounded-circle" src="image/colecao_flores.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Coleções</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
 
 
         <!-- COMEÇAM AS MENCIONADAS FEATUREZINHAS xD -->
 
-        <hr class="featurette-divider">
-
+        <hr class="featurette-divider" id="promocao">
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading">Dia das Mães <span class="text-muted">Sua mãe vai adorar</span></h2>
@@ -137,8 +153,7 @@
           </div>
         </div>
 
-        <hr class="featurette-divider">
-
+        <hr class="featurette-divider" id="flores">
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading">Coleção Flores. <span class="text-muted">Necessaires com alça lateral. </span></h2>
@@ -149,7 +164,7 @@
           </div>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="frida">
 
         <div class="row featurette">
           <div class="col-md-7">
